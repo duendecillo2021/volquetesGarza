@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+h3{ font-size: 1.5em;}
+p{ font-size: 1m;}
+ul{ list-style: none;}
+li{font-size: 1.25em;}
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5,);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5,);
+    color: white;
+    background-color: green;
+    
+}
+
+button:hover{
+    background-color: lightgreen;
+}
+
+
+body{
+    font-family: 'Anton', sans-serif;
+    margin:  0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: green;
+}
+
+header{
+    background-color:#021E06;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.50em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px ;
+}
+
+header a{
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: green;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("img/img8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    font-size: 5em;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
+#hero button{
+    font-size: 2em;
+}
+
+#Somos-Garza .container{
+    font-size: 1.5em;    
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-style: italic;
+    padding: 200px 12px; 
+
+   
+}
+
+#nuestros-servicios{
+    background-color: #021E06;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+#nuestros-servicios .container{
+    padding: 100px 12px;
+
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    color: green;
+    font-size: 3em;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+.carta:first-child{
+    background-image: url("img/img1.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: url("img/img1.jpg");
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+
+    
+}
+
+#caracteristicas li{
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+
+#garza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #021E06;
+    color: white;
+    height: 90vh;
+}
+
+#garza h2{
+    font-size: 4vw;
+}
+
+#garza button{
+    font-size: 5vw;
+}
+
+footer .form{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: #021E06;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: green;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+footer .instagram{
+    color: green;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    color: aliceblue;
+}
+
+@media (min-width: 720px){
+        header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+
+
+
+
+
+        #nuestros-servicios .servicios{
+            display: flex;
+            justify-content: center;
+        }
+
+
+    #nuestros-servicios p{
+        display: block;
+       
+    }
+ 
+    #nuestros-servicios h3{
+        margin-top: 0%;
+    }
+
+    
+    #nuestros-servicios .carta{
+        padding: 50px;
+        margin: 15px;
+        margin-right: 50px;
+        background-size: 100% 150px 20px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        font-size: 1.7rem;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+       font-weight: bold;
+        
+        
+    }
+
+    #nuestros-servicios .carta h3{
+        color: #CC0B0B
+        ;
+    }
+    
+   
+    #nuestros-servicios button{
+        margin-top: 10em;
+    }
+     
+       
+         
+
+    .carta:first-child{
+        background-image: url("img/img1.jpg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: url("img/img1.jpg");
+    }
+
+    #caracteristicas{
+        background-image: url(img/img7.jpg);
+       background-repeat: no-repeat;
+       background-size: 800px 500px;
+       background-position: calc(30vw - 500px);
+       border:solid black 10px 0px;
+       
+       
+
+
+    }
+
+     #caracteristicas .container{
+        text-align: initial
+     }
+       
+
+    #caracteristicas ul{
+       margin-left: 70%;
+    }
+        
+    #garza h2{
+        font-size: 5em;
+        font-family: 'Fredoka One', cursive;
+        
+        
+    }
+
+    #garza button{
+        font-size: 2em;
+        
+    
+
+    }
+
+    footer .container{
+        justify-content: flex-end;
+        margin: auto;
+       
+       
+        
+        
+    }
+
+    @media (min-width: 1200px) {
+        #caracteristicas{
+            background-position-x: calc(40vw - 600px);
+        }
+    }
+}
+
+
+
+
+
